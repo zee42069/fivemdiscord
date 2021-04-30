@@ -3,9 +3,12 @@
 You want to make your own CUSTOM discord rich presence for your fivem server right?
 then this is the right place for you!
 
-[TOCM]
 
-[TOC]
+- [Instructions](#Instructions)
+	- [Step 1](#Step 1)
+	- [Step 2](#Step 2)
+	- [LAST STEP](#LAST STEP)
+- [Natives](#Natives.lua)
 
 ## Instructions
 ### Step 1
@@ -71,7 +74,7 @@ in server.cfg so that will make Discord resource start automaticlly with The Ser
 **And then Boom! now you have your own Custom Discord Rich Precense for your FiveM Server!**
 
 
-## Natives (lua)
+## Natives.lua
 More Natives Here https://docs.fivem.net/natives/
 ### SetDiscordAppId
 `0x6A02254D`
