@@ -9,7 +9,7 @@ then this is the right place for you!
 
 ## Instructions
 ### Step 1
-Download [Latest Release](releases) and copy [Discord](discord) Folder Into resources folder in your FiveM Server and Edit the `client.lua` file
+Download [Latest Release](https://github.com/ZeeKungYT/fivemdiscord/releases) and copy [Discord](discord) Folder Into resources folder in your FiveM Server and Edit the `client.lua` file
 
 
 ### Step 2
