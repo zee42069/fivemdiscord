@@ -3,7 +3,7 @@
 You want to make your own CUSTOM discord rich presence for your fivem server right?
 then this is the right place for you!
 
-**Table of Contents**
+[TOCM]
 
 [TOC]
 
