@@ -1,26 +1,39 @@
 # FiveM Discord Rich Presence
 
+You want to make your own CUSTOM discord rich presence for your fivem server right?
+then this is the right place for you!
+
+**Table of Contents**
+
+[TOC]
+
 ## Instructions
 ### Step 1
-Copy [Discord](/tree/main/discord "Discord") Folder Into resources folder in your FiveM Server and Edit the `client.lua` file
+Clone and copy [Discord](/tree/main/discord "Discord") Folder Into resources folder in your FiveM Server and Edit the `client.lua` file
 
 
 ### Step 2
 Edit thing you should edit that comment said to
+**Make sure to read all the comments
+If you want to read comment easier just edit client.lua in Visual Studio Code
+Get your Own Application from https://discordapp.com/developers/applications/**
 
-##### Get your Own Application from https://discordapp.com/developers/applications/
-
-#### Example :
+**Example :**
 
 ```lua
 Citizen.CreateThread(function()
 	while true do
         local PlayerName = GetPlayerName(PlayerId())
         local id = GetPlayerServerId(PlayerId())
+		
         -- This is the Application ID (Replace this with you own)
-		SetDiscordAppId(4839028490328940)
+		SetDiscordAppId(YourApplicationIDHere)
+		
         SetRichPresence(PlayerName.." ["..id.."]") -- This will take the player name and the Id
+		
         -- Here you will have to put the image name for the "large" icon.
+		-- You can create one by go to Rich Presence/Art Assets tab in your application and  click Add Image(s)
+		-- The Paramater is your Image key that you uploaded (you can change it too once you upload)
 		SetDiscordRichPresenceAsset('LargeIcon')
         
 
@@ -34,7 +47,11 @@ Citizen.CreateThread(function()
             First paramater is the button index (0 or 1), second is the title and 
             last is the url (this has to start with "fivem://connect/" or "https://") 
         ]]--
-        SetDiscordRichPresenceAction(0, "Join", "fivem://connect/192.168.1.76:21060")
+        SetDiscordRichPresenceAction(0, "Join", "fivem://connect/YourIpHere")
+
+		--You can add more Natives Here vvv
+		--SetDiscordRichPresenceAction(1, "Example", "https://example.com")
+
 
         -- Updates every 1 minute
 		Citizen.Wait(60000)
@@ -43,17 +60,19 @@ end)
 ```
 
 ### LAST STEP
-#### Do not forget to add 
+**Do not forget to add **
 
 `ensure Discord` 
-##### ^^^ CASE SENSITIVE, MAKE SURE THAT IS CORRECT FOLDER NAME IF YOU RENAME IT 
+
+**^^^ CASE SENSITIVE, MAKE SURE THAT IS CORRECT FOLDER NAME IF YOU RENAME IT **
 
 in server.cfg so that will make Discord resource start automaticlly with The Server
 
-###### And then Boom! now you have your own Custom Discord Rich Precense for your FiveM Server!
+**And then Boom! now you have your own Custom Discord Rich Precense for your FiveM Server!**
 
 
 ## Natives (lua)
+More Natives Here https://docs.fivem.net/natives/
 ### SetDiscordAppId
 `0x6A02254D`
 -- SET_DISCORD_APP_ID
