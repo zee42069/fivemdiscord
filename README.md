@@ -14,9 +14,8 @@ Clone and copy [Discord](/tree/main/discord "Discord") Folder Into resources fol
 
 ### Step 2
 Edit thing you should edit that comment said to
-**Make sure to read all the comments
-If you want to read comment easier just edit client.lua in Visual Studio Code
-Get your Own Application from https://discordapp.com/developers/applications/**
+**Make sure to read all the comments**
+**Get your Own Application from https://discordapp.com/developers/applications/**
 
 **Example :**
 
@@ -60,11 +59,11 @@ end)
 ```
 
 ### LAST STEP
-**Do not forget to add **
+**Do not forget to add**
 
 `ensure Discord` 
 
-**^^^ CASE SENSITIVE, MAKE SURE THAT IS CORRECT FOLDER NAME IF YOU RENAME IT **
+**^^^ CASE SENSITIVE, MAKE SURE THAT IS CORRECT FOLDER NAME IF YOU RENAME IT**
 
 in server.cfg so that will make Discord resource start automaticlly with The Server
 
