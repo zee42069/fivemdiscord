@@ -5,7 +5,7 @@ then this is the right place for you!
 
 
 - [Instructions](#Instructions)
-- [Natives](#Natives.lua)
+- [Natives](#Natives)
 
 ## Instructions
 ### Step 1
@@ -70,7 +70,7 @@ in server.cfg so that will make Discord resource start automaticlly with The Ser
 **And then Boom! now you have your own Custom Discord Rich Precense for your FiveM Server!**
 
 
-## Natives.lua
+## Natives
 More Natives Here https://docs.fivem.net/natives/
 ### SetDiscordAppId
 `0x6A02254D`
